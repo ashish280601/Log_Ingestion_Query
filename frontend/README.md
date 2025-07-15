@@ -1,12 +1,59 @@
-# React + Vite
+# 🌐 Log Ingestion & Querying System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React-based frontend for the **Log Ingestion and Querying System**. It provides an elegant, responsive interface for developers to filter, search, and view ingested logs by various parameters such as level, message content, timestamp range, and more.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Features
 
-## Expanding the ESLint configuration
+- 🔍 Filter logs by message, level, resource ID, timestamp, trace ID, and commit
+- 🗂 View logs in a structured, color-coded table
+- 🧰 Reusable component architecture
+- 📅 Integrated date filtering
+- 🎨 Modern, clean, and responsive UI with fade-in animations
+- 🔄 Real-time filter application and clear/reset functionality
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- [React 19](https://react.dev)
+- [Vite](https://vitejs.dev) – Development bundler
+- [Tailwind CSS (optional)] or custom CSS (used here)
+- No Redux – lightweight state management via hooks
+
+---
+
+## 📁 Folder Structure
+
+frontend/
+├── components/
+│ ├── common/
+│ │ ├── InputField.jsx
+│ │ ├── Dropdown.jsx
+│ │ └── DatePicker.jsx
+│ ├── FilterBar.jsx
+│ └── LogTable.jsx
+├── services/
+│ └── api.js # Fetch wrapper for backend calls
+├── styles/
+│ └── index.css # Root CSS variables and layout
+├── App.jsx # Main app layout and logic
+├── main.jsx # Entry point
+├── index.html
+├── package.json
+└── vite.config.js
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+
+```bash
+cd frontend
+npm install
+
+npm run dev   #Run Development Server
+The frontend runs on: http://localhost:5173
