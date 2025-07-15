@@ -1,0 +1,232 @@
+[
+  {
+    "level": "error",
+    "message": "Database connection failed",
+    "resourceId": "server-1234",
+    "timestamp": "2025-07-15T14:55:00Z",
+    "traceId": "trace-001",
+    "spanId": "span-001",
+    "commit": "5e5342f",
+    "metadata": {
+      "parentResourceId": "server-5678",
+      "os": "linux"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "High memory usage detected",
+    "resourceId": "scheduler-node",
+    "timestamp": "2025-07-14T10:30:00Z",
+    "traceId": "trace-002",
+    "spanId": "span-002",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "threshold": "85%"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User login successful",
+    "resourceId": "auth-service",
+    "timestamp": "2025-07-13T09:10:00Z",
+    "traceId": "trace-003",
+    "spanId": "span-003",
+    "commit": "f6e4b2c",
+    "metadata": {
+      "userId": "user-abc"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Cache miss for key user-session-123",
+    "resourceId": "cache-layer",
+    "timestamp": "2025-07-12T18:45:00Z",
+    "traceId": "trace-004",
+    "spanId": "span-004",
+    "commit": "d4e5f6a",
+    "metadata": {
+      "cache": "Redis"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Payment gateway timeout",
+    "resourceId": "payment-service",
+    "timestamp": "2025-07-11T22:20:00Z",
+    "traceId": "trace-005",
+    "spanId": "span-005",
+    "commit": "998a7b6",
+    "metadata": {
+      "gateway": "Stripe"
+    }
+  },
+  {
+    "level": "info",
+    "message": "System started successfully",
+    "resourceId": "orchestrator",
+    "timestamp": "2025-07-15T06:00:00Z",
+    "traceId": "trace-006",
+    "spanId": "span-006",
+    "commit": "7abc123",
+    "metadata": {
+      "env": "prod"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "JWT token about to expire",
+    "resourceId": "auth-service",
+    "timestamp": "2025-07-14T23:59:00Z",
+    "traceId": "trace-007",
+    "spanId": "span-007",
+    "commit": "c2b3a1d",
+    "metadata": {
+      "exp": "2025-07-15T00:00:00Z"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Polling heartbeat every 5 seconds",
+    "resourceId": "monitor-daemon",
+    "timestamp": "2025-07-15T01:00:00Z",
+    "traceId": "trace-008",
+    "spanId": "span-008",
+    "commit": "aabbcc1",
+    "metadata": {
+      "interval": "5s"
+    }
+  },
+  {
+    "level": "error",
+    "message": "User permission denied on update",
+    "resourceId": "user-service",
+    "timestamp": "2025-07-13T13:00:00Z",
+    "traceId": "trace-009",
+    "spanId": "span-009",
+    "commit": "ddeeff3",
+    "metadata": {
+      "userId": "user-xyz"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Scheduled task completed successfully",
+    "resourceId": "task-runner",
+    "timestamp": "2025-07-12T08:15:00Z",
+    "traceId": "trace-010",
+    "spanId": "span-010",
+    "commit": "abc9991",
+    "metadata": {
+      "task": "daily-reports"
+    }
+  },{
+    "level": "warn",
+    "message": "Slow response from third-party API",
+    "resourceId": "integration-service",
+    "timestamp": "2025-07-14T16:42:00Z",
+    "traceId": "trace-012",
+    "spanId": "span-012",
+    "commit": "c3d4e5f",
+    "metadata": {
+      "api": "WeatherStack"
+    }
+  },
+  {
+    "level": "error",
+    "message": "Session expired for user",
+    "resourceId": "session-manager",
+    "timestamp": "2025-07-13T14:30:00Z",
+    "traceId": "trace-013",
+    "spanId": "span-013",
+    "commit": "98af45d",
+    "metadata": {
+      "userId": "u-10345"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Token refreshed successfully",
+    "resourceId": "auth-refresh",
+    "timestamp": "2025-07-12T17:50:00Z",
+    "traceId": "trace-014",
+    "spanId": "span-014",
+    "commit": "d4e5f6g",
+    "metadata": {
+      "refreshCount": 1
+    }
+  },
+  {
+    "level": "error",
+    "message": "Email dispatch failed",
+    "resourceId": "mailer-service",
+    "timestamp": "2025-07-11T19:20:00Z",
+    "traceId": "trace-015",
+    "spanId": "span-015",
+    "commit": "acbd125",
+    "metadata": {
+      "recipient": "user@example.com"
+    }
+  },
+  {
+    "level": "info",
+    "message": "System backup completed",
+    "resourceId": "backup-service",
+    "timestamp": "2025-07-10T03:10:00Z",
+    "traceId": "trace-016",
+    "spanId": "span-016",
+    "commit": "back1234",
+    "metadata": {
+      "duration": "3m20s"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "Deprecated API used in request",
+    "resourceId": "legacy-router",
+    "timestamp": "2025-07-09T12:15:00Z",
+    "traceId": "trace-017",
+    "spanId": "span-017",
+    "commit": "oldapi789",
+    "metadata": {
+      "endpoint": "/v1/orders"
+    }
+  },
+  {
+    "level": "info",
+    "message": "Admin user updated roles",
+    "resourceId": "user-admin",
+    "timestamp": "2025-07-08T11:45:00Z",
+    "traceId": "trace-018",
+    "spanId": "span-018",
+    "commit": "admin321",
+    "metadata": {
+      "adminId": "admin-01",
+      "rolesChanged": true
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Queued job for invoice generation",
+    "resourceId": "job-queue",
+    "timestamp": "2025-07-07T07:33:00Z",
+    "traceId": "trace-019",
+    "spanId": "span-019",
+    "commit": "queue9988",
+    "metadata": {
+      "jobId": "inv-gen-234"
+    }
+  },
+  {
+    "level": "error",
+    "message": "File upload failed due to size limit",
+    "resourceId": "upload-handler",
+    "timestamp": "2025-07-06T20:18:00Z",
+    "traceId": "trace-020",
+    "spanId": "span-020",
+    "commit": "uploadfail56",
+    "metadata": {
+      "fileSize": "35MB",
+      "limit": "30MB"
+    }
+  }
+]
